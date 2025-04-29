@@ -9,5 +9,5 @@ async def hello():
     return {"message": "Hello World"}
 
 # MCPサーバーを作成
-mcp = FastApiMCP(app, name="シンプルMCPサービス")
+mcp = FastApiMCP(app, name="シンプルMCPサービスです。")
 mcp.mount()
