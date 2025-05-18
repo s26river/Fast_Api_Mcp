@@ -16,18 +16,21 @@ async def konbanwa(name: str) -> str:
 #mcp.mount()
 
 if __name__ == "__main__":
-    import asyncio
-    port = int(os.environ.get("PORT", 8000))
-    host = os.environ.get("HOST", "0.0.0.0")
+    mcp.run(transport="stdio")
+
+#if __name__ == "__main__":
+    #import asyncio
+    #port = int(os.environ.get("PORT", 8000))
+    #host = os.environ.get("HOST", "0.0.0.0")
     #log_level = os.environ.get("LOG_LEVEL", "info").lower()
     
     #logger.info(f"Starting MCP server on {host}:{port}")
     
     # Run the FastMCP server with SSE transport
-    asyncio.run(
-        mcp.run_sse_async(
-            host="0.0.0.0",  # Changed from 127.0.0.1 to allow external connections
-            port=port,
+    #asyncio.run(
+        #mcp.run_sse_async(
+            #host="0.0.0.0",  # Changed from 127.0.0.1 to allow external connections
+            #port=port,
             #log_level="debug"
-        )
-    )
+        #)
+    #)
