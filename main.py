@@ -8,10 +8,9 @@ mcp = FastMCP()
 
 #@app.get("/hello", operation_id="say_hello")
 @mcp.tool()
-async def hello():
-    """シンプルな挨拶エンドポイント"""
-    return {"message": "Hello World"}
-
+async def konbanwa(name: str) -> str:
+    """あいさつ"""
+    return f"わんばんこ！, {name}!"
 # MCPサーバーを作成
 #mcp = FastApiMCP(app, name="シンプルMCPサービスです。")
 #mcp.mount()
