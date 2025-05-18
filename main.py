@@ -7,6 +7,7 @@ import os
 mcp = FastMCP()
 
 #@app.get("/hello", operation_id="say_hello")
+@mcp.tool()
 async def hello():
     """シンプルな挨拶エンドポイント"""
     return {"message": "Hello World"}
