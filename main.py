@@ -1,6 +1,7 @@
 #from fastapi import FastAPI
 #from fastapi_mcp import FastApiMCP
 from fastmcp import FastMCP
+import os
 
 #app = FastAPI(title="シンプルAPI")
 mcp = FastMCP()
