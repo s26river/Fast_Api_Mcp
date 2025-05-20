@@ -10,5 +10,6 @@ async def konbanwa(name: str) -> str:
 
 if __name__ == "__main__":
     #mcp.run(transport="stdio")
-    mcp.run(transport="sse",host="0.0.0.0",port=8888)
+    #mcp.run(transport="sse",host="0.0.0.0",port=8888)
+    mcp.run(transport="sse",host="0.0.0.0")
 
