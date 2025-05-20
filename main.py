@@ -4,6 +4,8 @@ from fastmcp import FastMCP
 import os
 
 mcp = FastMCP()
+
+@mcp.tool()
 async def konbanwa(name: str) -> str:
     """あいさつ"""
     return f"わんばんこ！, {name}!"
